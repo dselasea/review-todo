@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 5rem auto;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: 2px solid rgba(217, 217, 217, 0.595);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.todos h1,
+ul li,
+form .input,
+.clear {
+  padding: 1.2rem;
+}
+
+.todos {
+  width: 50%;
+  border: 2px solid rgba(217, 217, 217, 0.595);
+  margin: 0 auto;
+}
+
+.todos .heading h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+  border-top: 2px solid rgba(217, 217, 217, 0.595);
+  font-weight: 300;
+}
+
+ul li .input-check {
+  cursor: pointer;
+  opacity: 0.6;
+  margin-right: 1rem;
+}
+
+ul li #text {
+  border: 0;
+  font-size: 1.2rem;
+  width: 100px;
+  display: inline-block;
+}
+
+ul li .check-container {
+  padding-left: 0.5rem;
+}
+
+.span {
+  width: 50%;
+  display: inline-block;
+  padding: 0.2rem;
+}
+
+#trash {
+  float: right;
+  color: rgba(144, 144, 144, 0.759);
+  cursor: pointer;
+  margin-top: -1.4px;
+  padding-right: 1.2rem;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+#trash:hover {
+  opacity: 1;
+}
+
+.fav {
+  float: right;
+  color: rgba(144, 144, 144, 0.759);
+  cursor: move;
+}
+
+.faspin {
+  font-size: 1rem;
+  padding-right: 1.2rem;
+  color: rgba(144, 144, 144, 0.759);
+  cursor: pointer;
+}
+
+.clear {
+  width: 100%;
+  border-top: 2px solid rgba(217, 217, 217, 0.595);
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  background-color: #fff;
+  cursor: pointer;
+  color: rgba(123, 121, 121, 0.81);
+}
