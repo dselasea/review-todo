@@ -1,7 +1,6 @@
 import todoList from "./display";
-const todos = [];
-
-function addItem(e) {
+function addItem() {
+  const todos = [];
   todos.push(
     {
       description: 'Skate',
@@ -14,10 +13,9 @@ function addItem(e) {
       index: 1
     }
   )
-    localStorage.setItem('todoData', JSON.stringify(todos));
+    localStorage.setItem('localTodos', JSON.stringify(todos));
     // clearInput();
     todoList();
-  e.preventDefault();
 }
 
 export default addItem;

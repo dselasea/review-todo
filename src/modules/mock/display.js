@@ -1,6 +1,7 @@
 const todoList = () => {
   let todos = [];
 
+  todo = JSON.parse(localStorage.getItem('localTodos')) || [];
   let htmlList = '';
   for (let i = 0; i < todos.length; i += 1) {
     let isCompleted;
@@ -23,7 +24,7 @@ const todoList = () => {
     count += 1;
     todos[i].index = count;
   }
-  localStorage.setItem('todoData', JSON.stringify(todos));
+  // localStorage.setItem('todoData', JSON.stringify(todos));
 };
 
 export default todoList;

@@ -11,7 +11,7 @@ describe('Adding todos', () => {
 
   it('Added to DOM', () => {
     localStorage.removeItem('localItem');
-    addList('Dance');
+    addItem('Dance');
     const task = JSON.parse(localStorage.getItem('localTodos'));
     expect(task).toHaveLength(task.length);
   });

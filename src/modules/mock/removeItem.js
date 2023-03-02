@@ -1,15 +1,13 @@
 import display from './display.js';
 
 // Delete from storage
-function deleteFromStorage(id) {
+function removeItem(id) {
   let todos = [];
-  todos.forEach((todo, index) => {
-    if (todo.index === Number(id)) {
-      todos.splice(index, 1);
-    }
-  });
+  const removeTodos = localStorage.getItem('localTodos');
+  todos = JSON.parse(removeTodos);
+      todos.splice(id, 1);
   localStorage.setItem('todoData', JSON.stringify(todos));
   display();
 }
 
-export default deleteFromStorage;
+export default removeItem;
